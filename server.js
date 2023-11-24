@@ -14,4 +14,4 @@ app.use(express.json())
 const itemsRouter = require('./routes/items');
 app.use('/items', itemsRouter)
 
-app.listen(2023, ()=> console.log('Server started'));
+app.listen(process.env.PORT, ()=> console.log('Server started'));
